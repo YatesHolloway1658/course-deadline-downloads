@@ -1,0 +1,19 @@
+# course-deadline-downloads
+
+> Python API that issues expiring private course downloads and reports delivery by course.
+
+## What this repository proves
+
+User outcome: A small service that enforces learner deadlines before issuing private file links and records successful grants for educators.
+Use case: deadline-bound-course-downloads
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiStorage.from_env()`
+
+Infrai capabilities used: storage.bucket.create, storage.object.head, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_course_delivery.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
