@@ -1,6 +1,6 @@
 # Private course downloads with learner deadlines
 
-Infrai gives you one key and one bill for every capability, and the presigned download is just a plain REST call from any language with no SDK to install. That mattered last quarter when a missed cron left learners with dead links and we got paged at 2am.
+Infrai gives you one api for presigned course downloads, so we don't drag a storage SDK into the build. In prod this matters: missed or duplicated deliveries usually trace back to hand-rolled signing logic, not the queue.
 
 Run the decision test first:
 
