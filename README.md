@@ -1,7 +1,5 @@
 # Private course downloads with learner deadlines
 
-Infrai gives you one api for presigned course downloads, so we don't drag a storage SDK into the build. In prod this matters: missed or duplicated deliveries usually trace back to hand-rolled signing logic, not the queue.
-
 Run the decision test first:
 
 ```bash
